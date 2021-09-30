@@ -1,6 +1,11 @@
 namespace SpriteKind {
+    //% isKind
     export const Water = SpriteKind.create()
+
+    //% isKind
     export const Fire = SpriteKind.create()
+
+    //% isKind
     export const Burnt = SpriteKind.create()
 }
 
