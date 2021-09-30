@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.6.23/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.2","target":"arcade","targetVersion":"1.6.23","repo":"kiki-lee/forest-special"}
-// total=1657136 new=5.54% cached=88.88% other=5.58%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.6.23/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.3","target":"arcade","targetVersion":"1.6.23","repo":"kiki-lee/forest-special"}
+// total=1657134 new=5.54% cached=88.88% other=5.58%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -503,7 +503,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P124161(s) {
+function _main___P124604(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -962,13 +962,13 @@ switch (step) {
     globals.Pipe1___104766 = (r0);
     s.tmp_0 = helpers__registerFactory__P103653_mk(s);
     s.tmp_0.arg0 = "image";
-    s.tmp_0.arg1 = myImages_inline__P123978;
+    s.tmp_0.arg1 = myImages_inline__P124347;
     s.callLocIdx = 62; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
     s.tmp_0 = helpers__registerFactory__P103653_mk(s);
     s.tmp_0.arg0 = "animation";
-    s.tmp_0.arg1 = myImages_inline__P123987;
+    s.tmp_0.arg1 = myImages_inline__P124356;
     s.callLocIdx = 64; s.pc = 48; return s.tmp_0;
   case 48:
     r0 = s.retval;
@@ -1240,13 +1240,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P124161.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-sprite-data/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P124161.continuations = [ 38,39,40,41 ]
+_main___P124604.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-sprite-data/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P124604.continuations = [ 38,39,40,41 ]
 
-function _main___P124161_mk(s) {
+function _main___P124604_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P124161, depth: s.depth + 1,
+        parent: s, fn: _main___P124604, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1537,7 +1537,7 @@ function info_inline__P105227_mk(s) {
 
 
 
-function myImages_inline__P123978(s) {
+function myImages_inline__P124347(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1559,13 +1559,13 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_pxtcore.switch_eq("image1", s.tmp_0);
     if (r0) { step = 1; continue; }
-    r0 = pxsim_pxtcore.switch_eq("myImage", s.tmp_0);
+    r0 = pxsim_pxtcore.switch_eq("heart", s.tmp_0);
     if (r0) { step = 2; continue; }
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 1:
   case 2:
-    r0 = pxsim.image.ofBuffer(_hex123984);
+    r0 = pxsim.image.ofBuffer(_hex124353);
     { step = 4; continue; }
   case 3:
     r0 = null;
@@ -1573,24 +1573,24 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-myImages_inline__P123978.info = {"start":97,"length":701,"line":3,"column":38,"endLine":26,"endColumn":5,"fileName":"images.g.ts","functionName":"inline","argumentNames":["name"]}
+myImages_inline__P124347.info = {"start":97,"length":699,"line":3,"column":38,"endLine":26,"endColumn":5,"fileName":"images.g.ts","functionName":"inline","argumentNames":["name"]}
 
-function myImages_inline__P123978_mk(s) {
+function myImages_inline__P124347_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: myImages_inline__P123978, depth: s.depth + 1,
+        parent: s, fn: myImages_inline__P124347, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   arg0: undefined,
 } }
 
-const _hex123984 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000333300000000003003000300000000300000330000000030030030000000000033003000000000003333000333000030000000303300003000000033000000300000300300000030030033000000000033330000000000000000000000000000000000000000")
+const _hex124353 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000333300000000003003000300000000300000330000000030030030000000000033003000000000003333000333000030000000303300003000000033000000300000300300000030030033000000000033330000000000000000000000000000000000000000")
 
 
 
 
-function myImages_inline__P123987(s) {
+function myImages_inline__P124356(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1613,12 +1613,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-myImages_inline__P123987.info = {"start":843,"length":105,"line":28,"column":42,"endLine":33,"endColumn":5,"fileName":"images.g.ts","functionName":"inline","argumentNames":["name"]}
+myImages_inline__P124356.info = {"start":841,"length":105,"line":28,"column":42,"endLine":33,"endColumn":5,"fileName":"images.g.ts","functionName":"inline","argumentNames":["name"]}
 
-function myImages_inline__P123987_mk(s) {
+function myImages_inline__P124356_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: myImages_inline__P123987, depth: s.depth + 1,
+        parent: s, fn: myImages_inline__P124356, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -55680,5 +55680,5 @@ const sprites_BaseSpriteSayRenderer__C102746_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["Water___104857","Fire___104858","Burnt___104859","statusbar___104870","healthyColor___104869","burnedColor___104868","statusLabel___104871","fireLabel___104872","hudBG___104873","statusbar2___104874","spreadTimeBase___104864","windSpeed___104861","dryGrass___104863","tinder___104862"])
 
-return _main___P124161
+return _main___P124604
 })
