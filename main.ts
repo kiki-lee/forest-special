@@ -21,6 +21,8 @@ let facing = 0
 let changeRate = 7
 let burnedColor = 2
 let healthyColor = 3
+let fireHasStarted = false;
+let fireSpreadHasBeenCalled = false;
 
 let statusbar = statusbars.create(82, 4, StatusBarKind.Health)
 statusbar.top = 12
@@ -79,7 +81,11 @@ game.onUpdate(function () {
     } else {
         statusbar2.setColor(2, 2)
     }
-    if (sprites.allOfKind(SpriteKind.Fire).length <= 0) {
+    const numberOfFires = sprites.allOfKind(SpriteKind.Fire).length;
+
+    fireHasStarted = numberOfFires > 0  || fireHasStarted;
+
+    if (numberOfFires <= 0 && fireHasStarted && fireSpreadHasBeenCalled) {
         hud.fire_hud(false)
         info.setScore(statusbar.value / statusbar.max * 100)
         game.splash("You saved " + convertToText(info.score()) + "% of the forest!")
@@ -333,6 +339,7 @@ namespace sprites {
      */
     //% block="random spread $myImage=screen_image_picker"
     export function random_spread(myImage: Image) {
+        fireSpreadHasBeenCalled = true;
 
         for (let value of sprites.allOfKind(SpriteKind.Fire)) {
             if (sprites.readDataNumber(value, "life") <= 0) {
